@@ -27,7 +27,7 @@ def check_for_clipboard_change():
         match = re.findall(r'\d+\.\n(?:.*\n){3}(.*)', clip)
         out = '\n'.join(match)
 
-        with open('data/list_of_company_names_raw.csv', 'a') as file:
+        with open('../data/list_of_company_names_raw.csv', 'a') as file:
             file.write('\n' + out)
 
 

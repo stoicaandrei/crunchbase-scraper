@@ -71,7 +71,7 @@ def scrape_data(company_name):
     if not soup:
         print_green(
             f'{company_name}, alias {name} gave an error while loading')
-        with open('data/error.csv', 'a') as file:
+        with open('../data/error.csv', 'a') as file:
             file.write('\n' + company_name)
         return
 
@@ -86,7 +86,7 @@ def scrape_data(company_name):
     # the name wasn't correct if there are no social links on the page
     if len(links) == 0:
         print_green(f'{company_name}, alias {name} could not be found')
-        with open('data/not_found.csv', 'a') as file:
+        with open('../data/not_found.csv', 'a') as file:
             file.write('\n' + company_name)
         return
 
@@ -148,12 +148,12 @@ def scrape_data(company_name):
         else:
             cto_twitter = person_twitter.group(1)
 
-    with open('data/found.csv', 'a') as file:
+    with open('../data/found.csv', 'a') as file:
         file.write(
             f'\n"{company_name}","{website}","{company_twitter}","{ceo_twitter}","{cto_twitter}"')
 
 
-with open('data/list_of_company_names_raw.csv', 'r') as fp:
+with open('../data/list_of_company_names_raw.csv', 'r') as fp:
     line = fp.readline()
 
     while line:
