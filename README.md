@@ -25,6 +25,8 @@
 
 This project was implemented to be able to save crunchbase data without having access to their APIs. All that you need is a `Crunchbase Free Trial`.
 
+It gathers data about companies like their website, their twitter and their founder's twitter. It can be modified to gather other types of data easily.
+
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
