@@ -36,7 +36,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 
