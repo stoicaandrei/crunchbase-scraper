@@ -1,15 +1,10 @@
 import sys
 import re
-import requests
-import sip
-import gc
 from bs4 import BeautifulSoup
 
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import QUrl
 from PyQt5.QtWebEngineWidgets import QWebEnginePage
-
-from multiprocessing.dummy import Pool as ThreadPool
 
 BASE_URL = 'https://www.crunchbase.com'
 
